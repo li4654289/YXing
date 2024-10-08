@@ -353,6 +353,7 @@ open class ScanCodeActivity : BaseScanActivity(), OnScancodeListener {
         )
         intent.putExtra(ScanCodeConfig.CODE_KEY, result.text)
         setResult(Activity.RESULT_OK, intent)
+        Lod.d("Scan","Scaned")
         
     }
 
